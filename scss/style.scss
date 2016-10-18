@@ -1,0 +1,171 @@
+@mixin clearfix(){
+  &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+%btn{
+  background: deepskyblue;
+  padding: 15px 20px;
+  color: white;
+};
+
+*{
+  box-sizing: border-box;
+  position: relative;
+
+}
+.container{
+  width: 90%;
+  @media (min-width: 1024px){
+    width: 75%;
+  }
+
+  margin: 0px auto;
+  padding: 50px 30px;
+  } // end container
+
+.main-header{
+  .navbrand{
+    font-size: 40px;
+    text-decoration: none;
+    margin: -7px 0 0 0;
+    text-align: center;
+    padding: 15px 20px;
+    @media (min-width: 768px){
+      float: left;
+      font-size: 30px;
+    }
+    @media (min-width: 920px){
+      font-size: 35px;
+    }
+  }
+  .navbar{
+    @media (min-width: 768px){
+      float: right;
+      padding-top: 10px;
+    }
+      li{
+            @media (min-width: 768px){
+              display: inline-block;
+            }
+            a{
+                @extend %btn;
+                text-decoration: none;
+                display: block;
+                border-bottom: solid 1px white;
+                @media (min-width: 768px){
+                  padding: 5px 10px;
+                }
+                @media (min-width: 920px){
+                  padding: 10px 15px;
+                }
+              }
+        }
+
+    } // end navbar
+  // add clearfix
+  @include clearfix();
+} // end main-header
+
+.main-content{
+  .showtime{
+    height: 200px;
+    text-align: center;
+    span{
+      display: inline-block;
+      font-size: 100px;
+      padding: 8px 0;
+      @media (min-width:768px ){
+        
+        font-size: 120px;
+      }
+    }
+  }
+  .controltimer{
+    display: block;
+    height: 80px;
+      li{
+          text-align: center;
+          float: left;
+          width: 100%;
+          @media (min-width:768px ){
+            width: 33.33%;
+          }
+          a{
+                border-bottom: solid 1px #fff;
+                border-right: solid 1px #fff;
+                display: block;
+                background: #E74C3C;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                padding: 15px 20px;
+              }
+        }
+
+        &:last-of-type{
+          padding-right: 0;
+        }
+    }
+    // add clearfix
+    @include clearfix();
+    .operatortimer{
+      @extend .controltimer;
+      .green{
+        background-color: #5DA423;
+      }
+      .red{
+        background-color: #C60F13;
+      }
+      .grey{
+        background-color: grey
+      }
+    }
+} // end main-content
+
+.keyshortcut{
+  .module{
+    background: #F2F2F2;
+    padding: 35px 20px;
+    margin: 15px 5px;
+  }
+  @media (min-width: 768px){
+    float: left;
+    width: 50%;
+  }
+} // end keyshortcut
+.notification{
+  @extend .keyshortcut;
+  .btn{
+    @extend %btn;
+  }
+} // end notification
+
+.faqmodal{
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  display: none;
+      .faq-content{
+        background-color: deepskyblue;
+        color: white;
+        width: 500px;
+        height: auto;
+        padding: 40px 30px;
+        left: 3em;
+        top: 0;
+        h2{
+          text-align: center;
+        }
+        h3{
+          color: black;
+        }
+      }
+}
+@keyframes slideDown {
+    0%   {top:-500px;}
+    100% {top:0px;}
+}

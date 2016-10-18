@@ -1,0 +1,129 @@
+.main-header .navbar li a, .notification .btn {
+  background: deepskyblue;
+  padding: 15px 20px;
+  color: white; }
+
+* {
+  box-sizing: border-box;
+  position: relative; }
+
+.container {
+  width: 90%;
+  margin: 0px auto;
+  padding: 50px 30px; }
+  @media (min-width: 1024px) {
+    .container {
+      width: 75%; } }
+
+.main-header .navbrand {
+  font-size: 40px;
+  text-decoration: none;
+  margin: -7px 0 0 0;
+  text-align: center;
+  padding: 15px 20px; }
+  @media (min-width: 768px) {
+    .main-header .navbrand {
+      float: left;
+      font-size: 30px; } }
+  @media (min-width: 920px) {
+    .main-header .navbrand {
+      font-size: 35px; } }
+@media (min-width: 768px) {
+  .main-header .navbar {
+    float: right;
+    padding-top: 10px; } }
+@media (min-width: 768px) {
+  .main-header .navbar li {
+    display: inline-block; } }
+.main-header .navbar li a {
+  text-decoration: none;
+  display: block;
+  border-bottom: solid 1px white; }
+  @media (min-width: 768px) {
+    .main-header .navbar li a {
+      padding: 5px 10px; } }
+  @media (min-width: 920px) {
+    .main-header .navbar li a {
+      padding: 10px 15px; } }
+.main-header:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.main-content .showtime {
+  height: 200px;
+  text-align: center; }
+  .main-content .showtime span {
+    display: inline-block;
+    font-size: 100px;
+    padding: 8px 0; }
+    @media (min-width: 768px) {
+      .main-content .showtime span {
+        font-size: 120px; } }
+.main-content .controltimer, .main-content .operatortimer {
+  display: block;
+  height: 80px; }
+  .main-content .controltimer li, .main-content .operatortimer li {
+    text-align: center;
+    float: left;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .main-content .controltimer li, .main-content .operatortimer li {
+        width: 33.33%; } }
+    .main-content .controltimer li a, .main-content .operatortimer li a {
+      border-bottom: solid 1px #fff;
+      border-right: solid 1px #fff;
+      display: block;
+      background: #E74C3C;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 15px 20px; }
+  .main-content .controltimer:last-of-type, .main-content .operatortimer:last-of-type {
+    padding-right: 0; }
+.main-content:after {
+  content: "";
+  display: table;
+  clear: both; }
+.main-content .operatortimer .green {
+  background-color: #5DA423; }
+.main-content .operatortimer .red {
+  background-color: #C60F13; }
+.main-content .operatortimer .grey {
+  background-color: grey; }
+
+.keyshortcut .module, .notification .module {
+  background: #F2F2F2;
+  padding: 35px 20px;
+  margin: 15px 5px; }
+@media (min-width: 768px) {
+  .keyshortcut, .notification {
+    float: left;
+    width: 50%; } }
+
+.faqmodal {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  display: none; }
+  .faqmodal .faq-content {
+    background-color: deepskyblue;
+    color: white;
+    width: 500px;
+    height: auto;
+    padding: 40px 30px;
+    left: 3em;
+    top: 0; }
+    .faqmodal .faq-content h2 {
+      text-align: center; }
+    .faqmodal .faq-content h3 {
+      color: black; }
+
+@keyframes slideDown {
+  0% {
+    top: -500px; }
+  100% {
+    top: 0px; } }
+
+/*# sourceMappingURL=style.css.map */
