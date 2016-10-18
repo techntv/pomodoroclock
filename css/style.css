@@ -1,3 +1,7 @@
+ol, ul{
+  list-style: none;
+}
+
 .main-header .navbar li a, .notification .btn {
   background: deepskyblue;
   padding: 15px 20px;
