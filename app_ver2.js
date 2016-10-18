@@ -92,7 +92,7 @@
 
     var pomodoroTime = makeTime("25");
     var breakLongTime = makeTime("10");
-    var breakShortTime = makeTime("01");
+    var breakShortTime = makeTime("05");
 
    function endTime(){
      if (minutes.innerHTML === "00" && seconds.innerHTML === "00") {
