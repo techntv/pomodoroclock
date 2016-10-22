@@ -3,6 +3,13 @@
   padding: 15px 20px;
   color: white; }
 
+ol, ul {
+  list-style: none; }
+
+body {
+  background: url("../img/clock_bg.jpg") no-repeat fixed center;
+  background-size: cover; }
+
 * {
   box-sizing: border-box;
   position: relative; }
@@ -16,6 +23,7 @@
       width: 75%; } }
 
 .main-header .navbrand {
+  color: white;
   font-size: 40px;
   text-decoration: none;
   margin: -7px 0 0 0;
@@ -51,6 +59,7 @@
   clear: both; }
 
 .main-content .showtime {
+  color: white;
   height: 200px;
   text-align: center; }
   .main-content .showtime span {
@@ -71,8 +80,8 @@
       .main-content .controltimer li, .main-content .operatortimer li {
         width: 33.33%; } }
     .main-content .controltimer li a, .main-content .operatortimer li a {
-      border-bottom: solid 1px #fff;
-      border-right: solid 1px #fff;
+      border: solid 1px #fff;
+      border-radius: 3px;
       display: block;
       background: #E74C3C;
       text-decoration: none;
